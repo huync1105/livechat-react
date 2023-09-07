@@ -10,7 +10,8 @@ import {
 } from "@ant-design/icons";
 import { Button, Input, Space } from "antd";
 
-export default function ShowAppMessageWidget() {
+export default function ShowAppMessageWidget(props: any) {
+
   return (
     <>
       <nav className="appMessage__nav">
@@ -30,6 +31,7 @@ export default function ShowAppMessageWidget() {
           <Button
             shape="circle"
             icon={<LayoutOutlined style={{ fontSize: "1.25em" }} />}
+            onClick={props.openLayout}
           />
           <Button
             shape="circle"
